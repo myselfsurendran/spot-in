@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CRITICAL FOR MOBILE: This meta tag ensures the site scales correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Guesser: India</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div class="ui-panel question-panel">
+        <p>Identify the Location</p>
+    </div>
+
+    <div id="thumbnail-container" class="ui-panel hidden">
+        <img id="thumbnail-image" src="" alt="Location Thumbnail">
+    </div>
+
+    <div id="hint-container" class="ui-panel hidden">
+        <button id="hint-button">💡 Hint</button>
+    </div>
+
+    <!-- Timer Score display -->
+    <div id="timer-container" class="ui-panel hidden">
+        <span id="timer-score">1000</span>
+    </div>
+
+    <div id="feedback-panel" class="ui-panel feedback-panel hidden">
+        <div class="feedback-item" id="distance-feedback">-- km</div>
+        <div class="feedback-item" id="direction-feedback">--</div>
+        <div class="feedback-item" id="attempts-feedback">Attempt 1/5</div>
+    </div>
+
+    <div id="welcome-overlay" class="visible">
+        <div class="welcome-box">
+            <h1>Geo Guesser</h1>
+            <p>India Edition</p>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <div id="image-modal" class="hidden">
+        <div class="image-container">
+            <img id="location-image" src="" alt="Location to guess">
+            <button id="start-guessing-button">Start Guessing</button>
+        </div>
+    </div>
+    
+    <div id="hint-toast" class="hidden"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

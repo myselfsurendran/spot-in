@@ -1,0 +1,347 @@
+:root {
+    --bg-dark: #121212;
+    --panel-dark: #1e1e1e;
+    --text-light: #e8e8e8;
+    --text-muted: #888888;
+    --accent: #d4af37; /* Classic Gold/Amber */
+    --border-color: #333333;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-dark);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.leaflet-container {
+    cursor: crosshair !important;
+}
+
+/* --- SLICK ANIMATIONS: Transition properties added --- */
+.ui-panel, #welcome-overlay, #image-modal, #hint-toast {
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* UI Panel Styling */
+.ui-panel {
+    position: absolute;
+    z-index: 1000;
+    background: var(--panel-dark);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    padding: 12px 25px;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9) translateY(10px);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+}
+
+/* Panel Positioning */
+.question-panel {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+}
+
+#thumbnail-container {
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 125px;
+    padding: 0;
+    overflow: hidden;
+    transform-origin: top left;
+}
+
+#thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+#thumbnail-container:hover #thumbnail-image {
+    transform: scale(1.1);
+}
+
+.feedback-panel {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.feedback-item {
+    text-align: center;
+    font-weight: 700;
+}
+
+#distance-feedback {
+    font-family: 'Lora', serif;
+    font-size: 2.2em;
+    color: var(--accent);
+}
+
+#direction-feedback {
+    font-size: 1.5em;
+}
+
+#attempts-feedback {
+    font-size: 1.2em;
+    color: var(--text-muted);
+}
+
+/* Hint & Timer Containers */
+#hint-container {
+    top: 95px;
+    left: 20px;
+    padding: 8px;
+    transform-origin: top left;
+}
+
+#hint-button {
+    background: none;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#hint-button:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+#hint-button:disabled {
+    background: var(--text-muted);
+    border-color: var(--text-muted);
+    color: var(--panel-dark);
+    cursor: not-allowed;
+}
+
+#timer-container {
+    top: 20px;
+    right: 20px;
+    font-family: 'Lora', serif;
+    font-size: 2.2em;
+    color: var(--accent);
+    padding: 8px 20px;
+    transform-origin: top right;
+}
+
+/* Welcome and Image Modals */
+#welcome-overlay, #image-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 18, 18, 0.9);
+    backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.welcome-box h1 {
+    font-family: 'Lora', serif;
+    font-size: 4em;
+    margin: 0;
+}
+
+.welcome-box p {
+    font-size: 1.5em;
+    margin: 0 0 30px;
+    color: var(--text-muted);
+}
+
+#start-button, #start-guessing-button {
+    background: var(--accent);
+    color: var(--bg-dark);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#start-button:hover, #start-guessing-button:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    text-align: center;
+}
+
+#location-image {
+    max-width: 80vw;
+    max-height: 70vh;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    object-fit: contain;
+}
+
+/* Compass, Markers, and Popups */
+.compass-ring {
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(232, 232, 232, 0.7);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.compass-pointer {
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: var(--accent);
+    top: 8px;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.guess-marker-div {
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    opacity: 0.7;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#hint-toast {
+    position: absolute;
+    top: 170px; /* Adjusted position to not overlap */
+    left: 20px;
+    z-index: 2001;
+    background: var(--accent);
+    color: var(--bg-dark);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2em;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+    transform: translateX(-20px) scale(0.95);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#hint-toast.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) scale(1);
+}
+
+.leaflet-popup-content .reveal-score {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.reveal-score h4 {
+    margin: 0;
+    font-size: 1em;
+    color: var(--text-muted);
+}
+
+.reveal-score p {
+    margin: 4px 0 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 768px) {
+    .ui-panel {
+        padding: 8px 15px;
+    }
+    .question-panel {
+        width: calc(100% - 40px);
+        font-size: 1.2em;
+    }
+    #thumbnail-container {
+        width: 120px;
+        height: 75px;
+    }
+    #hint-container {
+        top: 105px;
+        left: 20px;
+    }
+    #hint-button {
+        font-size: 0.9em;
+        padding: 6px 15px;
+    }
+    #timer-container {
+        font-size: 1.8em;
+    }
+    .feedback-panel {
+        gap: 15px;
+        width: calc(100% - 40px);
+        justify-content: space-between;
+    }
+    #distance-feedback {
+        font-size: 1.5em;
+    }
+    #direction-feedback {
+        font-size: 1.2em;
+    }
+    #attempts-feedback {
+        font-size: 1em;
+    }
+    .welcome-box h1 {
+        font-size: 3em;
+    }
+    .welcome-box p {
+        font-size: 1.2em;
+    }
+    .leaflet-popup-content h3 {
+        font-size: 1.2em;
+    }
+    #hint-toast {
+        top: 180px;
+        left: 20px;
+        width: calc(100% - 90px);
+    }
+}
