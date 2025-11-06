@@ -8,73 +8,69 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Mysore Palace", location: "Mysuru, Karnataka", latlng: [12.3052, 76.6552], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_at_night.jpg", hints: ["State: Karnataka", "The former seat of the Wadiyar dynasty."] },
     ];
 
+    // --- Using OpenStreetMap for a classic, live map feel ---
     const map = L.map('map', { scrollWheelZoom: true, doubleClickZoom: true, minZoom: 5, maxZoom: 18, zoomControl: false }).setView([23.5, 78.9629], 5);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>' }).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // --- SCORING & GAME STATE VARIABLES ---
     let correctPlace, attempts = 0, compassMarker, guessMarkers = [];
-    let hintsUsed = 0;
-    let timerInterval = null;
-    let timerScore = 1000;
+    let hintsUsed = 0, timerInterval = null, timerScore = 1000;
     const WINNING_DISTANCE_KM = 5;
     const MAX_ATTEMPTS = 5;
 
-    const uiElements = {
-        thumbnailContainer: document.getElementById('thumbnail-container'),
-        thumbnailImage: document.getElementById('thumbnail-image'),
-        feedbackPanel: document.getElementById('feedback-panel'),
-        distanceFeedback: document.getElementById('distance-feedback'),
-        directionFeedback: document.getElementById('direction-feedback'),
-        attemptsFeedback: document.getElementById('attempts-feedback'),
-        welcomeOverlay: document.getElementById('welcome-overlay'),
-        startButton: document.getElementById('start-button'),
-        imageModal: document.getElementById('image-modal'),
-        locationImage: document.getElementById('location-image'),
-        startGuessingButton: document.getElementById('start-guessing-button'),
-        hintContainer: document.getElementById('hint-container'),
-        hintButton: document.getElementById('hint-button'),
-        hintToast: document.getElementById('hint-toast'),
-        timerContainer: document.getElementById('timer-container'),
-        timerScore: document.getElementById('timer-score'),
+    const ui = {
+        thumbnailContainer: document.getElementById('thumbnail-container'), thumbnailImage: document.getElementById('thumbnail-image'),
+        feedbackPanel: document.getElementById('feedback-panel'), distanceFeedback: document.getElementById('distance-feedback'),
+        directionFeedback: document.getElementById('direction-feedback'), attemptsFeedback: document.getElementById('attempts-feedback'),
+        welcomeOverlay: document.getElementById('welcome-overlay'), startButton: document.getElementById('start-button'),
+        imageModal: document.getElementById('image-modal'), locationImage: document.getElementById('location-image'),
+        startGuessingButton: document.getElementById('start-guessing-button'), hintContainer: document.getElementById('hint-container'),
+        hintButton: document.getElementById('hint-button'), hintToast: document.getElementById('hint-toast'),
+        timerContainer: document.getElementById('timer-container'), timerScore: document.getElementById('timer-score'),
+        gameOverOverlay: document.getElementById('game-over-overlay'), gameOverTitle: document.getElementById('game-over-title'),
+        gameOverAnswer: document.getElementById('game-over-answer'), gameOverScore: document.getElementById('game-over-score'),
+        playAgainButton: document.getElementById('play-again-button')
     };
     
-    uiElements.startButton.addEventListener('click', () => {
-        uiElements.welcomeOverlay.classList.remove('visible');
-        uiElements.welcomeOverlay.classList.add('hidden');
+    // --- EVENT LISTENERS ---
+    ui.startButton.addEventListener('click', () => {
+        ui.welcomeOverlay.classList.remove('visible');
+        ui.welcomeOverlay.classList.add('hidden');
         startNewRound();
     });
-
-    uiElements.startGuessingButton.addEventListener('click', () => {
-        uiElements.imageModal.classList.add('hidden');
-        [uiElements.thumbnailContainer, uiElements.hintContainer, uiElements.timerContainer].forEach(el => el.classList.remove('hidden'));
+    ui.startGuessingButton.addEventListener('click', () => {
+        ui.imageModal.classList.add('hidden');
+        [ui.thumbnailContainer, ui.hintContainer, ui.timerContainer].forEach(el => el.classList.remove('hidden'));
         startTimer();
         map.on('click', onMapClick);
     });
-
-    uiElements.hintButton.addEventListener('click', showHint);
+    ui.playAgainButton.addEventListener('click', () => {
+        ui.gameOverOverlay.classList.add('hidden');
+        map.flyTo([23.5, 78.9629], 5, { animate: true, duration: 1.5 });
+        setTimeout(startNewRound, 1500);
+    });
+    ui.hintButton.addEventListener('click', showHint);
 
     function startNewRound() {
         attempts = 0;
         hintsUsed = 0;
         stopTimer();
         
-        [uiElements.feedbackPanel, uiElements.thumbnailContainer, uiElements.hintContainer, uiElements.timerContainer].forEach(el => el.classList.add('hidden'));
-        uiElements.hintButton.disabled = false;
+        [ui.feedbackPanel, ui.thumbnailContainer, ui.hintContainer, ui.timerContainer].forEach(el => el.classList.add('hidden'));
+        ui.hintButton.disabled = false;
         
         if (compassMarker) map.removeLayer(compassMarker);
         guessMarkers.forEach(marker => map.removeLayer(marker));
         guessMarkers = [];
-        map.eachLayer(layer => { if (layer instanceof L.Popup) map.removeLayer(layer); });
-
+        
         correctPlace = places[Math.floor(Math.random() * places.length)];
         correctPlace.latlng = L.latLng(correctPlace.latlng[0], correctPlace.latlng[1]);
         
-        uiElements.locationImage.src = correctPlace.imageUrl;
-        uiElements.thumbnailImage.src = correctPlace.imageUrl;
-        uiElements.imageModal.classList.remove('hidden');
-
-        map.flyTo([23.5, 78.9629], 5, { animate: true, duration: 1.0 });
+        ui.locationImage.src = correctPlace.imageUrl;
+        ui.thumbnailImage.src = correctPlace.imageUrl;
+        ui.imageModal.classList.remove('hidden');
     }
 
     function onMapClick(e) {
@@ -87,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
             handleCorrectGuess();
             return;
         }
-        
         if (attempts >= MAX_ATTEMPTS) {
             handleRoundFailed();
             return;
@@ -96,10 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const bearing = calculateBearing(clickedLatLng, correctPlace.latlng);
         const direction = getCardinalDirection(bearing);
         
-        uiElements.distanceFeedback.textContent = `${Math.round(distance)} km`;
-        uiElements.directionFeedback.textContent = direction;
-        uiElements.attemptsFeedback.textContent = `Attempt ${attempts + 1}/${MAX_ATTEMPTS}`;
-        uiElements.feedbackPanel.classList.remove('hidden');
+        ui.distanceFeedback.textContent = `${Math.round(distance)} km`;
+        ui.directionFeedback.textContent = direction;
+        ui.attemptsFeedback.textContent = `Attempt ${attempts + 1}/${MAX_ATTEMPTS}`;
+        ui.feedbackPanel.classList.remove('hidden');
 
         addGuessMarker(clickedLatLng);
         showCompass(clickedLatLng, bearing);
@@ -110,38 +105,34 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleCorrectGuess() {
         stopTimer();
         const score = calculateScore();
-
-        [uiElements.feedbackPanel, uiElements.hintContainer, uiElements.timerContainer].forEach(el => el.classList.add('hidden'));
-        if (compassMarker) map.removeLayer(compassMarker);
-        
-        const popupContent = `<h3>${correctPlace.name}</h3><p>${correctPlace.location}</p><div class="reveal-score"><h4>Final Score</h4><p>${score}</p></div>`;
-        L.popup({closeButton: false, autoClose: false, closeOnClick: false}).setLatLng(correctPlace.latlng).setContent(popupContent).openOn(map);
-        
-        map.flyTo(correctPlace.latlng, 14, { animate: true, duration: 2.0 });
-        setTimeout(startNewRound, 7000);
+        showGameOverScreen("🎉 Correct!", `The location was ${correctPlace.name}.`, score);
     }
 
     function handleRoundFailed() {
         stopTimer();
-        [uiElements.feedbackPanel, uiElements.hintContainer, uiElements.timerContainer].forEach(el => el.classList.add('hidden'));
+        showGameOverScreen("Out of Attempts!", `The answer was ${correctPlace.name}.`, 0);
+    }
+
+    function showGameOverScreen(title, answer, score) {
+        [ui.feedbackPanel, ui.hintContainer, ui.timerContainer, ui.thumbnailContainer].forEach(el => el.classList.add('hidden'));
         if (compassMarker) map.removeLayer(compassMarker);
+        map.off('click', onMapClick);
+        
+        ui.gameOverTitle.textContent = title;
+        ui.gameOverAnswer.textContent = answer;
+        ui.gameOverScore.textContent = score;
+        ui.gameOverOverlay.classList.remove('hidden');
 
-        const popupContent = `<h3>Better Luck Next Time!</h3><p>The answer was ${correctPlace.name}</p><div class="reveal-score"><h4>Final Score</h4><p>0</p></div>`;
-        L.popup({closeButton: false, autoClose: false, closeOnClick: false}).setLatLng(correctPlace.latlng).setContent(popupContent).openOn(map);
-
-        map.flyTo(correctPlace.latlng, 14, { animate: true, duration: 2.0 });
-        setTimeout(startNewRound, 7000);
+        map.flyTo(correctPlace.latlng, 12, { animate: true, duration: 2.0 });
     }
 
     function startTimer() {
         timerScore = 1000;
-        uiElements.timerScore.textContent = timerScore;
+        ui.timerScore.textContent = timerScore;
         timerInterval = setInterval(() => {
             timerScore = Math.max(0, timerScore - 20);
-            uiElements.timerScore.textContent = timerScore;
-            if (timerScore === 0) {
-                stopTimer();
-            }
+            ui.timerScore.textContent = timerScore;
+            if (timerScore === 0) stopTimer();
         }, 1000);
     }
 
@@ -153,12 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (hintsUsed >= correctPlace.hints.length) return;
         hintsUsed++;
         const hint = correctPlace.hints[hintsUsed - 1];
-        uiElements.hintToast.textContent = hint;
-        uiElements.hintToast.classList.add('visible');
-        setTimeout(() => uiElements.hintToast.classList.remove('visible'), 3000);
-        if (hintsUsed >= correctPlace.hints.length) {
-            uiElements.hintButton.disabled = true;
-        }
+        ui.hintToast.textContent = hint;
+        ui.hintToast.classList.add('visible');
+        setTimeout(() => ui.hintToast.classList.remove('visible'), 3000);
+        if (hintsUsed >= correctPlace.hints.length) ui.hintButton.disabled = true;
     }
 
     function calculateScore() {
@@ -170,8 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addGuessMarker(latlng) {
         const icon = L.divIcon({ className: 'guess-marker-icon', html: `<div class="guess-marker-div"></div>`, iconSize: [20, 20], iconAnchor: [10, 10] });
-        const guessMarker = L.marker(latlng, { icon: icon }).addTo(map);
-        guessMarkers.push(guessMarker);
+        guessMarkers.push(L.marker(latlng, { icon: icon }).addTo(map));
     }
 
     function showCompass(latlng, angle) {
@@ -180,13 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
         compassMarker = L.marker(latlng, { icon: icon }).addTo(map);
         setTimeout(() => {
             const pointer = compassMarker.getElement().querySelector('.compass-pointer');
-            if (pointer) { pointer.style.transform = `rotate(${angle}deg)`; }
+            if (pointer) pointer.style.transform = `rotate(${angle}deg)`;
         }, 0);
     }
     
     function calculateBearing(start, end) {
-        const startLat = (start.lat * Math.PI) / 180, startLng = (start.lng * Math.PI) / 180;
-        const endLat = (end.lat * Math.PI) / 180, endLng = (end.lng * Math.PI) / 180;
+        const startLat = (start.lat * Math.PI) / 180, startLng = (start.lng * Math.PI) / 180, endLat = (end.lat * Math.PI) / 180, endLng = (end.lng * Math.PI) / 180;
         let dLng = endLng - startLng;
         let dPhi = Math.log(Math.tan(endLat / 2.0 + Math.PI / 4.0) / Math.tan(startLat / 2.0 + Math.PI / 4.0));
         if (Math.abs(dLng) > Math.PI) dLng = dLng > 0.0 ? -(2.0 * Math.PI - dLng) : (2.0 * Math.PI + dLng);
@@ -195,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getCardinalDirection(angle) {
         const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
-        const index = Math.round(angle / 45) % 8;
-        return directions[index];
+        return directions[Math.round(angle / 45) % 8];
     }
 });
