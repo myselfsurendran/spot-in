@@ -1,0 +1,142 @@
+[
+    {
+      "name": "India Gate",
+      "location": "New Delhi, Delhi",
+      "latlng": [28.6129, 77.2295],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
+      "hints": ["State/UT: Delhi", "War memorial to fallen soldiers."]
+    },
+    {
+      "name": "Hawa Mahal",
+      "location": "Jaipur, Rajasthan",
+      "latlng": [26.9239, 75.8267],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Hawa_Mahal_in_Jaipur_07-2016.jpg",
+      "hints": ["State: Rajasthan", "‘Palace of Winds’ façade."]
+    },
+    {
+      "name": "Golden Temple",
+      "location": "Amritsar, Punjab",
+      "latlng": [31.62, 74.8765],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Harmandir_Sahib%2C_Amritsar%2C_Punjab%2C_India.jpg",
+      "hints": ["State: Punjab", "Holiest Gurdwara of Sikhism."]
+    },
+    {
+      "name": "Taj Mahal",
+      "location": "Agra, Uttar Pradesh",
+      "latlng": [27.1751, 78.0421],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg",
+      "hints": ["State: Uttar Pradesh", "Mughal mausoleum on the Yamuna."]
+    },
+    {
+      "name": "Mysore Palace",
+      "location": "Mysuru, Karnataka",
+      "latlng": [12.3052, 76.6552],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_at_night.jpg",
+      "hints": ["State: Karnataka", "Seat of the Wadiyar dynasty."]
+    },
+    {
+      "name": "Qutub Minar",
+      "location": "Mehrauli, Delhi",
+      "latlng": [28.5244, 77.1855],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Qutub_Minar_in_Delhi_03-2016.jpg",
+      "hints": ["State/UT: Delhi", "UNESCO minaret in Qutb complex."]
+    },
+    {
+      "name": "Red Fort (Lal Qila)",
+      "location": "Old Delhi, Delhi",
+      "latlng": [28.6562, 77.241],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lahori%20Gate%2C%20Red%20Fort%2C%20Delhi.jpg",
+      "hints": ["State/UT: Delhi", "Mughal fort; Independence Day address."]
+    },
+    {
+      "name": "Gateway of India",
+      "location": "Mumbai, Maharashtra",
+      "latlng": [18.9219, 72.8347],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gateway%20of%20India%20at%20night.jpg",
+      "hints": ["State: Maharashtra", "Iconic arch on the harbour."]
+    },
+    {
+      "name": "Ajanta Caves",
+      "location": "Aurangabad (Ch. Sambhajinagar), Maharashtra",
+      "latlng": [20.5519, 75.7033],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ajanta_Cave_18_exterior.jpg",
+      "hints": ["State: Maharashtra", "UNESCO Buddhist cave murals."]
+    },
+    {
+      "name": "Ellora Caves (Kailasa Temple)",
+      "location": "Aurangabad (Ch. Sambhajinagar), Maharashtra",
+      "latlng": [20.0269, 75.179],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ellora%2C%20cave%2016%2C%20Kailasa%20Temple.jpg",
+      "hints": ["State: Maharashtra", "Monolithic Kailasa temple (Cave 16)."]
+    },
+    {
+      "name": "Charminar",
+      "location": "Hyderabad, Telangana",
+      "latlng": [17.3616, 78.4747],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CharMinar-Hyderabad.jpg",
+      "hints": ["State: Telangana", "1591 landmark with four minarets."]
+    },
+    {
+      "name": "Meenakshi Amman Temple",
+      "location": "Madurai, Tamil Nadu",
+      "latlng": [9.9195, 78.1193],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meenakshi%20Amman%20Temple%2C%20Madurai.jpg",
+      "hints": ["State: Tamil Nadu", "Dravidian gopurams; Shiva–Meenakshi shrine."]
+    },
+    {
+      "name": "Brihadeeswarar Temple",
+      "location": "Thanjavur, Tamil Nadu",
+      "latlng": [10.7828, 79.131],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brihadeeswarar%20Temple%20Vimana.jpg",
+      "hints": ["State: Tamil Nadu", "UNESCO Chola-era 'Big Temple'."]
+    },
+    {
+      "name": "Shore Temple",
+      "location": "Mahabalipuram, Tamil Nadu",
+      "latlng": [12.6167, 80.1999],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shore%20Temple%2C%20Mahabalipuram.jpg",
+      "hints": ["State: Tamil Nadu", "UNESCO Pallava coastal temple."]
+    },
+    {
+      "name": "Victoria Memorial",
+      "location": "Kolkata, West Bengal",
+      "latlng": [22.5448, 88.3426],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria%20Memorial%2C%20The%20Facade%2C%20Kolkata%2C%20India.jpg",
+      "hints": ["State: West Bengal", "Colonial-era museum & gardens."]
+    },
+    {
+      "name": "Howrah Bridge (Rabindra Setu)",
+      "location": "Kolkata, West Bengal",
+      "latlng": [22.585, 88.3468],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Howrah%20Bridge%2C%20Kolkata%20%288746965103%29.jpg",
+      "hints": ["State: West Bengal", "Cantilever bridge over Hooghly."]
+    },
+    {
+      "name": "Konark Sun Temple",
+      "location": "Konark, Odisha",
+      "latlng": [19.8876, 86.0945],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Temple_Panorama2.jpg",
+      "hints": ["State: Odisha", "UNESCO Sun temple, Kalinga architecture."]
+    },
+    {
+      "name": "Vittala Temple (Stone Chariot), Hampi",
+      "location": "Hampi, Karnataka",
+      "latlng": [15.335, 76.46],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone%20Chariot%20Vittala%20Temple.jpg",
+      "hints": ["State: Karnataka", "UNESCO Hampi; iconic stone chariot."]
+    },
+    {
+      "name": "City Palace",
+      "location": "Udaipur, Rajasthan",
+      "latlng": [24.576, 73.6837],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/City_palace%2C_Udaipur.JPG",
+      "hints": ["State: Rajasthan", "Palace complex on Lake Pichola."]
+    },
+    {
+      "name": "Sanchi Stupa",
+      "location": "Sanchi, Madhya Pradesh",
+      "latlng": [23.4793, 77.739],
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanchi2.jpg",
+      "hints": ["State: Madhya Pradesh", "UNESCO Buddhist stupas & gateways."]
+    }
+  ]  

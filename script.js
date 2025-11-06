@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    const places = [
-        { name: "India Gate", location: "New Delhi, Delhi", latlng: [28.6129, 77.2295], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg", hints: ["State/UT: Delhi", "A memorial to fallen soldiers."] },
-        { name: "Hawa Mahal", location: "Jaipur, Rajasthan", latlng: [26.9239, 75.8267], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Hawa_Mahal_in_Jaipur_07-2016.jpg", hints: ["State: Rajasthan", "Known as the 'Palace of Winds'."] },
-        { name: "Golden Temple", location: "Amritsar, Punjab", latlng: [31.6200, 74.8765], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Harmandir_Sahib%2C_Amritsar%2C_Punjab%2C_India.jpg", hints: ["State: Punjab", "The holiest Gurdwara of Sikhism."] },
-        { name: "Taj Mahal", location: "Agra, Uttar Pradesh", latlng: [27.1751, 78.0421], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg", hints: ["State: Uttar Pradesh", "A mausoleum on the Yamuna river."] },
-        { name: "Mysore Palace", location: "Mysuru, Karnataka", latlng: [12.3052, 76.6552], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_at_night.jpg", hints: ["State: Karnataka", "The former seat of the Wadiyar dynasty."] },
-    ];
+    // --- CHANGE: 'places' will be the master list, 'availablePlaces' will be the list for the current cycle ---
+    let places = []; 
+    let availablePlaces = [];
 
     const map = L.map('map', { scrollWheelZoom: true, doubleClickZoom: true, minZoom: 5, maxZoom: 18, zoomControl: false }).setView([23.5, 78.9629], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -37,22 +33,50 @@ document.addEventListener('DOMContentLoaded', () => {
     ui.startButton.addEventListener('click', () => {
         ui.welcomeOverlay.classList.remove('visible');
         ui.welcomeOverlay.classList.add('hidden');
-        startNewRound();
+        loadGameData();
     });
+    
+    async function loadGameData() {
+        try {
+            const response = await fetch('data.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            places = await response.json();
+            // --- CHANGE: Create a copy of the master list to use for the game session ---
+            availablePlaces = [...places]; 
+            console.log("Game data loaded successfully!");
+            startNewRound(); 
+        } catch (error) {
+            console.error("Could not load game data:", error);
+            alert("Failed to load game data. Please check the data.json file and your connection.");
+        }
+    }
+
     ui.startGuessingButton.addEventListener('click', () => {
         ui.imageModal.classList.add('hidden');
         [ui.thumbnailContainer, ui.hintContainer, ui.timerContainer].forEach(el => el.classList.remove('hidden'));
         startTimer();
         map.on('click', onMapClick);
     });
+
     ui.playAgainButton.addEventListener('click', () => {
         ui.gameOverOverlay.classList.add('hidden');
         map.flyTo([23.5, 78.9629], 5, { animate: true, duration: 1.5 });
         setTimeout(startNewRound, 1500);
     });
+    
     ui.hintButton.addEventListener('click', showHint);
 
     function startNewRound() {
+        // --- CHANGE: Logic to handle non-repeating places ---
+        // 1. Check if we've run out of unique places
+        if (availablePlaces.length === 0) {
+            console.log("All places have been used! Resetting the list for a new cycle.");
+            // Reset the available list by making a fresh copy from the master list
+            availablePlaces = [...places]; 
+        }
+
         attempts = 0;
         hintsUsed = 0;
         stopTimer();
@@ -64,7 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
         guessMarkers.forEach(marker => map.removeLayer(marker));
         guessMarkers = [];
         
-        correctPlace = places[Math.floor(Math.random() * places.length)];
+        // --- CHANGE: Pick a place from the available list and remove it ---
+        // 2. Pick a random index from the *available* list
+        const randomIndex = Math.floor(Math.random() * availablePlaces.length);
+        // 3. Select the place and REMOVE it from the list in one step using splice
+        correctPlace = availablePlaces.splice(randomIndex, 1)[0]; 
+
         correctPlace.latlng = L.latLng(correctPlace.latlng[0], correctPlace.latlng[1]);
         
         ui.locationImage.src = correctPlace.imageUrl;
