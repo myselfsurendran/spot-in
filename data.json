@@ -3,700 +3,441 @@
       "name": "India Gate",
       "location": "New Delhi, Delhi",
       "latlng": [28.6129, 77.2295],
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/India_Gate_in_New_Delhi_03-2016.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1688781298681-ae1f2d470b31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWElMjBnYXRlJTIwZGVsaGl8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       "hints": ["State/UT: Delhi", "War memorial to fallen soldiers."]
     },
     {
       "name": "Hawa Mahal",
       "location": "Jaipur, Rajasthan",
       "latlng": [26.9239, 75.8267],
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Hawa_Mahal_in_Jaipur_07-2016.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1617516202907-ff75846e6667?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGF3YSUyMG1haGFsfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
       "hints": ["State: Rajasthan", "‘Palace of Winds’ façade."]
     },
     {
       "name": "Golden Temple",
       "location": "Amritsar, Punjab",
       "latlng": [31.62, 74.8765],
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Harmandir_Sahib%2C_Amritsar%2C_Punjab%2C_India.jpg",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z29sZGVuJTIwdGVtcGxlJTIwYW1yaXRzYXJ8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       "hints": ["State: Punjab", "Holiest Gurdwara of Sikhism."]
     },
     {
       "name": "Taj Mahal",
       "location": "Agra, Uttar Pradesh",
       "latlng": [27.1751, 78.0421],
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1661885523029-fc960a2bb4f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFqJTIwbWFoYWx8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       "hints": ["State: Uttar Pradesh", "Mughal mausoleum on the Yamuna."]
     },
     {
       "name": "Mysore Palace",
       "location": "Mysuru, Karnataka",
       "latlng": [12.3052, 76.6552],
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_at_night.jpg",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1697730407028-1c602ffb2e81?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bXlzb3JlJTIwcGFsYWNlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
       "hints": ["State: Karnataka", "Seat of the Wadiyar dynasty."]
     },
     {
       "name": "Qutub Minar",
       "location": "Mehrauli, Delhi",
       "latlng": [28.5244, 77.1855],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Qutub_Minar_in_Delhi_03-2016.jpg",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1697729438410-d53c666e3810?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXV0dWIlMjBtaW5hciUyMG5ldyUyMGRlbGhpfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
       "hints": ["State/UT: Delhi", "UNESCO minaret in Qutb complex."]
     },
     {
       "name": "Red Fort (Lal Qila)",
       "location": "Old Delhi, Delhi",
       "latlng": [28.6562, 77.241],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lahori%20Gate%2C%20Red%20Fort%2C%20Delhi.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1713729991304-d0b6c328560e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwZm9ydCUyMG5ldyUyMGRlbGhpJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       "hints": ["State/UT: Delhi", "Mughal fort; Independence Day address."]
     },
     {
       "name": "Gateway of India",
       "location": "Mumbai, Maharashtra",
       "latlng": [18.9219, 72.8347],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gateway%20of%20India%20at%20night.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1598434192043-71111c1b3f41?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2F0ZXdheSUyMG9mJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       "hints": ["State: Maharashtra", "Iconic arch on the harbour."]
     },
     {
       "name": "Ajanta Caves",
       "location": "Aurangabad (Ch. Sambhajinagar), Maharashtra",
       "latlng": [20.5519, 75.7033],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ajanta_Cave_18_exterior.jpg",
+      "imageUrl": "https://media.istockphoto.com/id/483439954/photo/ajanta-caves-buddhist-temples-in-arrangabad-india.jpg?s=612x612&w=0&k=20&c=9F6vucrKQiM59C34XTwVvxbVZrUFEP1Bsekip5utEXc=",
       "hints": ["State: Maharashtra", "UNESCO Buddhist cave murals."]
     },
     {
       "name": "Ellora Caves (Kailasa Temple)",
       "location": "Aurangabad (Ch. Sambhajinagar), Maharashtra",
       "latlng": [20.0269, 75.179],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ellora%2C%20cave%2016%2C%20Kailasa%20Temple.jpg",
+      "imageUrl": "https://t3.ftcdn.net/jpg/03/94/35/86/360_F_394358682_gW7f6Ep4h6cCfVncqxoz0lbaN1pFObwv.jpg",
       "hints": ["State: Maharashtra", "Monolithic Kailasa temple (Cave 16)."]
     },
     {
       "name": "Charminar",
       "location": "Hyderabad, Telangana",
       "latlng": [17.3616, 78.4747],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CharMinar-Hyderabad.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1657981630164-769503f3a9a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhcm1pbmFyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
       "hints": ["State: Telangana", "1591 landmark with four minarets."]
     },
     {
       "name": "Meenakshi Amman Temple",
       "location": "Madurai, Tamil Nadu",
       "latlng": [9.9195, 78.1193],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meenakshi%20Amman%20Temple%2C%20Madurai.jpg",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1697729444936-8c6a6f643312?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVlbmFrc2hpJTIwYW1tYW4lMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       "hints": ["State: Tamil Nadu", "Dravidian gopurams; Shiva–Meenakshi shrine."]
     },
     {
       "name": "Brihadeeswarar Temple",
       "location": "Thanjavur, Tamil Nadu",
       "latlng": [10.7828, 79.131],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brihadeeswarar%20Temple%20Vimana.jpg",
+      "imageUrl": "https://media.istockphoto.com/id/1455552376/photo/brihadishwara-temple-tanjore.jpg?s=612x612&w=0&k=20&c=lFKBtr6LOD2WfdiRxINYbRdOGPw9UJLtNde3VLqRkRU=",
       "hints": ["State: Tamil Nadu", "UNESCO Chola-era 'Big Temple'."]
     },
     {
       "name": "Shore Temple",
       "location": "Mahabalipuram, Tamil Nadu",
       "latlng": [12.6167, 80.1999],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shore%20Temple%2C%20Mahabalipuram.jpg",
+      "imageUrl": "https://t3.ftcdn.net/jpg/03/53/54/90/360_F_353549016_sAHzw1M6Fb8NVLams1jzmRNcuCulomwW.jpg",
       "hints": ["State: Tamil Nadu", "UNESCO Pallava coastal temple."]
     },
     {
       "name": "Victoria Memorial",
       "location": "Kolkata, West Bengal",
       "latlng": [22.5448, 88.3426],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria%20Memorial%2C%20The%20Facade%2C%20Kolkata%2C%20India.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1682582036641-91dfe7b66ba6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmljdG9yaWElMjBtZW1vcmlhbCUyQyUyMGtvbGthdGElMkMlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
       "hints": ["State: West Bengal", "Colonial-era museum & gardens."]
     },
     {
       "name": "Howrah Bridge (Rabindra Setu)",
       "location": "Kolkata, West Bengal",
       "latlng": [22.585, 88.3468],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Howrah%20Bridge%2C%20Kolkata%20%288746965103%29.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Howrah_Bridge-Rabindra_Setu.jpg",
       "hints": ["State: West Bengal", "Cantilever bridge over Hooghly."]
     },
     {
       "name": "Konark Sun Temple",
       "location": "Konark, Odisha",
       "latlng": [19.8876, 86.0945],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Temple_Panorama2.jpg",
+      "imageUrl": "https://t3.ftcdn.net/jpg/04/34/93/68/360_F_434936878_yp0ciikcw0jjax0mTFclNwugUgik8vlx.jpg",
       "hints": ["State: Odisha", "UNESCO Sun temple, Kalinga architecture."]
     },
     {
       "name": "Vittala Temple (Stone Chariot), Hampi",
       "location": "Hampi, Karnataka",
       "latlng": [15.335, 76.46],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone%20Chariot%20Vittala%20Temple.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Stone_Chariot_View%2C_Hampi.jpg/2560px-Stone_Chariot_View%2C_Hampi.jpg",
       "hints": ["State: Karnataka", "UNESCO Hampi; iconic stone chariot."]
-    },
-    {
-      "name": "City Palace",
-      "location": "Udaipur, Rajasthan",
-      "latlng": [24.576, 73.6837],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/City_palace%2C_Udaipur.JPG",
-      "hints": ["State: Rajasthan", "Palace complex on Lake Pichola."]
     },
     {
       "name": "Sanchi Stupa",
       "location": "Sanchi, Madhya Pradesh",
       "latlng": [23.4793, 77.739],
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanchi2.jpg",
+      "imageUrl": "https://media.istockphoto.com/id/1343698809/photo/sanchi-is-a-buddhist-complex-famous-for-its-great-stupa-on-a-hilltop-at-sanchi-town-in-raisen.jpg?s=612x612&w=0&k=20&c=KxC8TlKfCc_tEv1MRsQVCDsZPJi_moXxkMy4IGW8fv0=",
       "hints": ["State: Madhya Pradesh", "UNESCO Buddhist stupas & gateways."]
     },
     {
         "name": "Amber Fort",
         "location": "Amber, Jaipur, Rajasthan",
         "latlng": [26.9855, 75.8513],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Amer_Fort_Main_Gate.jpg",
+        "imageUrl": "https://t4.ftcdn.net/jpg/01/78/17/43/360_F_178174345_okDJQAMf69mBulq4lO5a4Ce9LFa948Jj.jpg",
         "hints": ["State: Rajasthan", "Hill-fort with palace complex above Jaipur."]
       },
       {
         "name": "Mehrangarh Fort",
         "location": "Jodhpur, Rajasthan",
         "latlng": [26.2976, 73.0180],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mehrangarh_Fort_Jodhpur1.jpg",
+        "imageUrl": "https://media.istockphoto.com/id/805563154/photo/mehrangharh-fort-and-jaswant-thada-mausoleum-in-jodhpur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=5r9UxPkz9mIkfAIFPLyTwqBQyqSO7mcAdQtcqGHOboA=",
         "hints": ["State: Rajasthan", "Massive 15th-century fort above the city of blue houses."]
       },
       {
         "name": "Golconda Fort",
         "location": "Hyderabad, Telangana",
         "latlng": [17.3833, 78.4011],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Golconda_Fort_14.jpg",
+        "imageUrl": "https://images.unsplash.com/photo-1470075446540-4391a96ec621?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29sY29uZGElMjBmb3J0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
         "hints": ["State: Telangana", "Former diamond trade centre & fortress of Qutb Shahi dynasty."]
       },
       {
         "name": "Khajuraho Temples",
         "location": "Khajuraho, Madhya Pradesh",
         "latlng": [24.8318, 79.9190],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Kandariya_Mahadev_Temple_Khajuraho.jpg",
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1697730370661-51bf72769ff6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2hhanVyYWhvfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
         "hints": ["State: Madhya Pradesh", "Medieval Hindu & Jain temples known for erotic sculptures."]
       },
       {
         "name": "Jantar Mantar (Jaipur)",
         "location": "Jaipur, Rajasthan",
         "latlng": [26.9249, 75.8246],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jantar_Mantar_Jaipur_05.jpg",
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1697730309688-cc2a3a573494?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amFudGFyJTIwbWFudGFyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
         "hints": ["State: Rajasthan", "18th-century astronomical instruments; large sundial."]  
-      },
-      {
-        "name": "Sanchi Stupa",
-        "location": "Sanchi, Madhya Pradesh",
-        "latlng": [23.4845, 77.7356],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Sanchi_Stupa_South_View.jpg",
-        "hints": ["State: Madhya Pradesh", "One of India’s oldest Buddhist stupas from Ashoka’s era."]
       },
       {
         "name": "Gommateshwara Statue (Shravanabelagola)",
         "location": "Shravanabelagola, Karnataka",
         "latlng": [12.8575, 76.4747],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Gommateshwara_statue_Bahubali.jpg",
+        "imageUrl": "https://t3.ftcdn.net/jpg/06/11/43/68/360_F_611436810_1hipi6EY6KeNDOS4scLWQWzsVL2II3nY.jpg",
         "hints": ["State: Karnataka", "Massive monolithic Jain statue of Bahubali, from 981 CE onwards."]  
       },
       {
         "name": "Jaisalmer Fort",
         "location": "Jaisalmer, Rajasthan",
         "latlng": [26.9157, 70.9083],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Jaisalmer_Fort_Front_View.jpg",
+        "imageUrl": "https://images.unsplash.com/photo-1710347454810-e3d493dcc538?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amFpc2FsbWVyJTIwZm9ydHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
         "hints": ["State: Rajasthan", "Living fort in the desert, golden sandstone walls."]
       },
       {
         "name": "Fatehpur Sikri",
         "location": "Fatehpur Sikri, Uttar Pradesh",
         "latlng": [27.0934, 77.6604],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Fatehpur_Sikri_174.JPG",
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1697730300605-8f099d0f36e9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmF0ZWhwdXIlMjBzaWtyaXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
         "hints": ["State: Uttar Pradesh", "Abandoned Mughal capital built by Akbar in 1585."]
       },
       {
         "name": "Agra Fort",
         "location": "Agra, Uttar Pradesh",
         "latlng": [27.1790, 78.0211],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Agra_Fort_Red_Sandstone.jpg",
+        "imageUrl": "https://media.istockphoto.com/id/1169495248/photo/agra-fort-medieval-indian-fort-at-agra-india-at-sunrise.jpg?s=612x612&w=0&k=20&c=EI9BXzCutx2gRuPCFUDSirZg9Hfc7G_kGfFbmVBmSEc=",
         "hints": ["State: Uttar Pradesh", "Major Mughal fortress; view of Taj from its walls."]
       },
       {
         "name": "Rani Ki Vav",
         "location": "Patan, Gujarat",
         "latlng": [23.8490, 72.1276],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Rani_Ki_Vav_Patan_Stepwell.jpg",
+        "imageUrl": "https://images.unsplash.com/photo-1708172143882-fc766c585320?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuaSUyMGtpJTIwdmF2fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
         "hints": ["State: Gujarat", "UNESCO step-well built by a queen; architectural marvel."]
       },
       {
         "name": "Chand Baori",
         "location": "Abhaneri, Rajasthan",
         "latlng": [27.8665, 76.5159],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Chand_Baori_Stepwell_Rajasthan.jpg",
+        "imageUrl": "https://media.istockphoto.com/id/1026502014/photo/chand-baori-the-most-famous-stair-well-in-india.jpg?s=612x612&w=0&k=20&c=bUKHf8xIT8YKm75Uutcu6SBj9q1S1FnxqGz1dzTXlFY=",
         "hints": ["State: Rajasthan", "One of India’s deepest & largest step-wells (3,500 steps)."]
       },
       {
         "name": "Fort Aguada",
         "location": "Sinquerim, Goa",
         "latlng": [15.4890, 73.7760],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Fort_Aguada_Goa_Lighthouse.jpg",
+        "imageUrl": "https://t4.ftcdn.net/jpg/03/62/17/23/360_F_362172345_j9j7tiI471EYfQxTLlzBx3fyq12SEnJo.jpg",
         "hints": ["State: Goa", "17th-century Portuguese fort overlooking Arabian Sea."]
       },
       {
         "name": "Elephanta Caves",
         "location": "Elephanta Island, Maharashtra",
         "latlng": [18.9634, 72.9311],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Elephanta_Caves_Shrine_Rock_Cut.jpg",
+        "imageUrl": "https://media.istockphoto.com/id/979180834/photo/elephanta-caves-historical-architecture-in-mumbai-india.jpg?s=612x612&w=0&k=20&c=DBPpMr6nBxQF8upTxZUS9S9UUq-LV5iKlH8_BCrKIh0=",
         "hints": ["State: Maharashtra", "Rock-cut cave temples dedicated to Shiva near Mumbai harbour."]
-      },
-      {
-        "name": "Victoria Memorial",
-        "location": "Kolkata, West Bengal",
-        "latlng": [22.5448, 88.3426],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Victoria_Memorial_Kolkata.jpg",
-        "hints": ["State: West Bengal", "White marble Indo-Saracenic memorial museum."]
       },
       {
         "name": "Jain Temples of Dilwara",
         "location": "Mount Abu, Rajasthan",
         "latlng": [24.5883, 72.7126],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Dilwara_Temples_Interior1.jpg",
+        "imageUrl": "https://www.shutterstock.com/image-photo/dilwara-delvada-temples-jain-mount-600nw-2147695443.jpg",
         "hints": ["State: Rajasthan", "Finely carved marble Jain temples from 11th-12th century."]
-      },
-      {
-        "name": "Mahabalipuram (Group of Monuments)",
-        "location": "Mahabalipuram, Tamil Nadu",
-        "latlng": [12.6208, 80.1930],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Shore_Temple_Mahabalipuram_2009.jpg",
-        "hints": ["State: Tamil Nadu", "7th-8th-century Pallava rock temples on the coast."]
       },
       {
         "name": "Udayagiri & Khandagiri Caves",
         "location": "Bhubaneswar, Odisha",
         "latlng": [20.3440, 85.8137],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Udayagiri_Caves_Odisha.jpg",
+        "imageUrl": "https://www.shutterstock.com/image-photo/cave-14-hathi-gumpha-udaygiri-260nw-2080244905.jpg",
         "hints": ["State: Odisha", "Ancient Jain rock-cut caves, 1st century BC."]
       },
       {
         "name": "Ramnagar Fort",
         "location": "Ramnagar, Uttarakhand",
         "latlng": [29.3860, 79.1736],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Ramnagar_Fort_Exterior.jpg",
+        "imageUrl": "https://www.varanasiguru.com/wp-content/uploads/2024/02/ramnagar-fort-varanasi-place-near-bhu-for-hangout-65d301d6051dd.webp",
         "hints": ["State: Uttarakhand", "18th-century hill-fort museum overlooking Ganga."]
       },
       {
         "name": "Rock-Cut Caves of Badami",
         "location": "Badami, Karnataka",
         "latlng": [15.9120, 75.1520],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Badami_Cave_Temples.jpg",
+        "imageUrl": "https://media.istockphoto.com/id/482513223/photo/mountain-fort-and-cave.jpg?s=612x612&w=0&k=20&c=HAHSu85syynclldUWl3rJsLeQNEBbg4zofw8yzC4TYw=",
         "hints": ["State: Karnataka", "6th-century Chalukya rock-cut cave temples."]
-      },
-      {
-        "name": "Keoladeo National Park",
-        "location": "Bharatpur, Rajasthan",
-        "latlng": [27.1558, 77.5078],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Keoladeo_National_Park_Bharatpur.jpg",
-        "hints": ["State: Rajasthan", "Important bird sanctuary; UNESCO natural heritage."]
-      },
-      {
-        "name": "Great Himalayan National Park Conservation Area",
-        "location": "Kullu, Himachal Pradesh",
-        "latlng": [31.9533, 77.1900],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Great_Himalayan_National_Park_Himachal_Pradesh.jpg",
-        "hints": ["State: Himachal Pradesh", "Himalayan ecosystem; UNESCO natural heritage."]
-      },
-      {
-        "name": "Nanda Devi and Valley of Flowers National Parks",
-        "location": "Chamoli, Uttarakhand",
-        "latlng": [30.4866, 79.6087],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Valley_of_Flowers_Uttarakhand.jpg",
-        "hints": ["State: Uttarakhand", "Alpine valley, wildflowers & glacial peaks."]
-      },
-      {
-        "name": "Monuments and Forts of the Deccan Sultanate",
-        "location": "Gulbarga & Bidar, Karnataka",
-        "latlng": [17.9130, 75.5300],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bidar_Alam_Shahi_Mausoleum.jpg",
-        "hints": ["State: Karnataka", "Late-Medieval Deccan kingdom architecture."]
-      },
-      {
-        "name": "Sacred Ensembles of the Hoysalas",
-        "location": "Belur & Halebidu, Karnataka",
-        "latlng": [13.1660, 75.9000],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Hoysaleswara_Temple_Halebidu.jpg",
-        "hints": ["State: Karnataka", "12th-century Hoysala temple architecture."]
-      },
-      {
-        "name": "Maratha Military Landscapes of India",
-        "location": "Various Maharash­tra forts",
-        "latlng": [19.7515, 75.7139],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Raigad_Fort_Maharashtra.jpg",
-        "hints": ["State: Maharashtra", "Fortresses of the Maratha empire."]
       },
       {
         "name": "Buddhist Monuments at Sarnath",
         "location": "Sarnath, Uttar Pradesh",
         "latlng": [25.4066, 83.0224],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Sarnath_Dhamek_Stupa.jpg",
+        "imageUrl": "https://s7ap1.scene7.com/is/image/incredibleindia/sarnath-varanasi-uttar-pradesh-1-musthead-hero?qlt=82&ts=1727353653401",
         "hints": ["State: Uttar Pradesh", "Place of Buddha’s first sermon; ancient Buddhist site."]
       },
       {
         "name": "Ramappa Temple (Rudreswara Temple)",
         "location": "Palampet, Telangana",
         "latlng": [18.2322, 79.4845],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Ramappa_Temple_Telangana.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Ramappa_Temple_%28Human_Scale%29.jpg/1200px-Ramappa_Temple_%28Human_Scale%29.jpg",
         "hints": ["State: Telangana", "13th-century Kakatiya sandstone temple."]
       },
       {
         "name": "Dholavira: A Harappan City",
         "location": "Rann of Kutch, Gujarat",
         "latlng": [23.8532, 70.8860],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dholavira_Harappan_City_in_Kutch.jpg",
+        "imageUrl": "https://www.gujarattourism.com/content/dam/gujrattourism/images/indus-valley-civilization-sites/dholavira/Dholavira-Banner.jpg",
         "hints": ["State: Gujarat", "Ancient Indus valley civilisation city site."]
-      },
-      {
-        "name": "Hill Forts of Rajasthan",
-        "location": "Aravalli Range, Rajasthan",
-        "latlng": [24.5995, 73.6850],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chittorgarh_Fort_In_Rajasthan.jpg",
-        "hints": ["State: Rajasthan", "Group of six Rajput forts; UNESCO cultural heritage."]
-      },
-      {
-        "name": "Historic Jeypore & Palace of Udaipur (City Palace) — alternate include",
-        "location": "Udaipur, Rajasthan",
-        "latlng": [24.5713, 73.6904],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Udaipur_City_Palace_Lake_Pichola.jpg",
-        "hints": ["State: Rajasthan", "Royal palace by Lake Pichola (not UNESCO but major heritage site)."]
       },
       {
         "name": "Bhimbetka Rock Shelters",
         "location": "Raisen District, Madhya Pradesh",
         "latlng": [23.9359, 77.6455],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Bhimbetka_Rock_Shelters_Cave_10.jpg",
+        "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/89/77/a8/caption.jpg?w=1200&h=-1&s=1",
         "hints": ["State: Madhya Pradesh", "Prehistoric rock-art site from Paleolithic era."]
       },
       {
-        "name": "Great Living Chola Temples (alternate but distinct complex)",
-        "location": "Gangaikonda Cholapuram, Tamil Nadu",
-        "latlng": [11.3736, 79.4560],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gangaikonda_Cholapuram_Temple.jpg",
-        "hints": ["State: Tamil Nadu", "13th-century Chola temple complex."]
-      },
-      {
-        "name": "Le Corbusier’s Chandigarh (Architectural Work of Le Corbusier)",
+        "name": "Le Corbusier's Chandigarh (Architectural Work of Le Corbusier)",
         "location": "Chandigarh Union Territory",
         "latlng": [30.7333, 76.7794],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Capitol_Complex_Chandigarh.jpg",
+        "imageUrl": "https://cdn.thespaces.com/wp-content/uploads/2020/04/Chandigarh_RC_6.jpg",
         "hints": ["UT: Chandigarh", "Modernist city planned by Le Corbusier; UNESCO work."]
       },
       {
-        "name": "Kumbh Mela (Intangible heritage, site-specific Ganges banks) — include variant",
-        "location": "Allahabad (Prayagraj), Uttar Pradesh",
-        "latlng": [25.4345, 81.8463],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Prayagraj_Kumbh_Mela_2019.jpg",
-        "hints": ["State: Uttar Pradesh", "Massive religious gathering; intangible cultural heritage."]
-      },
-      {
-        "name": "Sundarban Mangrove Forests (alternate area)",
-        "location": "Sundarbans, West Bengal",
-        "latlng": [21.9497, 88.9284],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sundarbans_Mangrove_Forest.jpg",
-        "hints": ["State: West Bengal", "Largest mangrove ecosystem; UNESCO natural site."]
-      },
-      {
-        "name": "Chandni Chowk Historic Lane (Old Delhi Heritage) — non-UNESCO major site",
+        "name": "Chandni Chowk Historic Lane",
         "location": "Old Delhi, Delhi",
         "latlng": [28.6562, 77.2303],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chandni_Chowk_Old_Delhi.jpg",
+        "imageUrl": "https://s7ap1.scene7.com/is/image/incredibleindia/chandni-chowk-delhi-2-attr-hero?qlt=82&ts=1742170496098",
         "hints": ["State/UT: Delhi", "Historic market lane from Mughal era."]
-      },
-      {
-        "name": "Chandraprabha Wildlife Sanctuary",
-        "location": "Chandauli, Uttar Pradesh",
-        "latlng": [25.3466, 83.5010],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Chandraprabha_Wildlife_Sanctuary_Uttar_Pradesh.jpg",
-        "hints": ["State: Uttar Pradesh", "Lesser-known sanctuary with waterfalls & wildlife."]
       },
       {
         "name": "Meghalaya Living Root Bridges",
         "location": "Cherrapunjee/Sohra, Meghalaya",
         "latlng": [25.2837, 91.7133],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Living_root_bridge_meghalaya.jpg",
+        "imageUrl": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/06/Explore-Marvellous-Meghalaya-8-Reasons-Why-You-Should-Take-the-Living-Root-Bridge-Trek-2-1280x720.webp",
         "hints": ["State: Meghalaya", "Organic suspension roots grown into pedestrian bridges."]
-      },
-      {
-        "name": "Dokri-Fossil Site (Karigudda), Karnataka",
-        "location": "Karigudda, Karnataka",
-        "latlng": [14.1760, 75.0810],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Dokri_Fossil_Site_Karnataka.jpg",
-        "hints": ["State: Karnataka", "Ancient fossil site illustrating early life records."]
       },
       {
         "name": "Pattadakal",
         "location": "Bagalkot district, Karnataka",
         "latlng": [15.8975, 75.7700],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Pattadakal_Temple_Complex.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Pattadakal_000.JPG",
         "hints": ["State: Karnataka", "7th-8th century temple complex; North & South Indian styles combined."]  
-      },
-      {
-        "name": "Mahabalipuram Shore Temples",
-        "location": "Mahabalipuram, Tamil Nadu",
-        "latlng": [12.6260, 80.1950],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Mahabalipuram_Shore_Temple_Sunset.jpg",
-        "hints": ["State: Tamil Nadu", "Pallava rock-cut & structural temples by the sea."]
       },
       {
         "name": "Srirangam Ranganathaswamy Temple",
         "location": "Srirangam, Tamil Nadu",
         "latlng": [10.8603, 78.6946],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Srirangam_Temple_Raja_Gopuram.jpg",
+        "imageUrl": "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/21/5bbded643474f9e135993944b52d03a1_1000x1000.jpg",
         "hints": ["State: Tamil Nadu", "Largest functioning Hindu temple in India by area."]
       },
       {
-        "name": "Rann of Kutch (White desert)",
+        "name": "Rann of Kutch",
         "location": "Kutch, Gujarat",
         "latlng": [23.7333, 70.8080],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Rann_of_Kutch_white_salt_desert.jpg",
+        "imageUrl": "https://www.tripsavvy.com/thmb/Yh7C0nh6CKbB5BmhRz3il-V8sm8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-537000923-541774dbe2d44759815fdf0719b04685.jpg",
         "hints": ["State: Gujarat", "Seasonal salt marsh; unique landscape."]
       },
       {
         "name": "Ziro Valley",
         "location": "Ziro, Arunachal Pradesh",
         "latlng": [27.6370, 93.8320],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ziro_Valley_paddy_fields.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg",
         "hints": ["State: Arunachal Pradesh", "Scenic valley in NE India; rice fields & tribal culture."]
       },
       {
         "name": "Khajjiar",
         "location": "Chamba district, Himachal Pradesh",
         "latlng": [32.4170, 76.0500],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Khajjiar_meadow.jpg",
+        "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqQJJSs3qiouYZgua9cZiNJ1h4ACjIK3NfVB03WzjCmS-xEEqABnTU7fUIFNxRDx1PfG7OclkH5LmHcP7vTj6C1nVHMOzOCsjFuPx3CG2YcRxcobk8jPJxRu9EBfJaJOXLJxYY2T0y1_U/s1600/Khajjiar.jpg",
         "hints": ["State: Himachal Pradesh", "Meadow in Himalayas, called ‘Mini Switzerland’ of India."]
       },
       {
         "name": "Dzukou Valley",
         "location": "Manipur/Nagaland border, North-East India",
         "latlng": [25.6763, 94.1258],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Dzukou_Valley_lilies.jpg",
+        "imageUrl": "https://www.solobackpacker.com/wp-content/uploads/2019/07/Dzukou-Valley-1.jpg",
         "hints": ["Region: Nagaland/Manipur", "Remote valley with wildflowers & trekking trails."]
       },
       {
         "name": "Cellular Jail",
         "location": "Port Blair, Andaman & Nicobar Islands",
         "latlng": [11.6667, 92.7333],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Cellular_Jail_Andaman.jpg",
+        "imageUrl": "https://seashellhotels.net/wp-content/uploads/2024/09/Cellular-Jail.png",
         "hints": ["Union Territory: Andaman & Nicobar Islands", "Colonial prison used during freedom struggle."]
-      },
-      {
-        "name": "Golkonda Fort",
-        "location": "Hyderabad, Telangana",
-        "latlng": [17.3833, 78.4011],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Golconda_Fort_14.jpg",
-        "hints": ["State: Telangana", "Hill-fort & former diamond-trade centre."]
-      },
-      {
-        "name": "Chandni Chowk (Old Delhi Market Area)",
-        "location": "Old Delhi, Delhi",
-        "latlng": [28.6562, 77.2303],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chandni_Chowk_Old_Delhi.jpg",
-        "hints": ["State/UT: Delhi", "Historic market lane from Mughal era."]
       },
       {
         "name": "Sundarbans Mangrove Forest",
         "location": "Sundarbans, West Bengal",
         "latlng": [21.9497, 88.9284],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sundarbans_Mangrove_Forest.jpg",
+        "imageUrl": "https://whc.unesco.org/uploads/thumbs/site_0798_0001-1200-630-20090910161220.jpg",
         "hints": ["State: West Bengal", "Largest mangrove forest; tiger habitat."]
       },
       {
         "name": "Spiti Valley",
         "location": "Lahaul & Spiti, Himachal Pradesh",
         "latlng": [32.2226, 77.7335],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Spiti_Valley_landscape.jpg",
+        "imageUrl": "https://bloominghimalaya.com/wp-content/uploads/2025/01/spiti.jpeg",
         "hints": ["State: Himachal Pradesh", "High-altitude desert valley; remote Himalayan terrain."]
       },
       {
         "name": "Chadar Trek (Frozen Zanskar River)",
         "location": "Zanskar, Ladakh union territory",
         "latlng": [33.0058, 76.2600],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Chadar_Trek_Zanskar_ice_trail.jpg",
+        "imageUrl": "https://trekthehimalayas.com/images/ChadarTrekFrozenRiver/MobileSlider/67236352-e4da-4600-85bf-3d488eef631e_Buran-Ghati-2.webp",
         "hints": ["Union Territory: Ladakh", "Extreme winter trek on frozen river."]
       },
       {
         "name": "Hemis Monastery",
         "location": "Hemis, Ladakh union territory",
         "latlng": [32.9450, 77.5850],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hemis_Monastery_Ladakh.jpg",
+        "imageUrl": "https://discoverlehladakh.in/wp-content/uploads/2020/06/Hemis-monastery-1022x530.jpeg",
         "hints": ["Union Territory: Ladakh", "Important Buddhist monastery in Himalayas."]
       },
       {
         "name": "Majuli Island",
         "location": "Brahmaputra River, Assam",
         "latlng": [26.9560, 94.2110],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Majuli_Island_Assam_river.jpg",
+        "imageUrl": "https://www.indiantempletour.com/wp-content/uploads/2023/04/Majuli-Island.webp",
         "hints": ["State: Assam", "Largest river-island in the world; tribal & eco culture."]
       },
       {
         "name": "Hire Benakal",
         "location": "Koppal district, Karnataka",
         "latlng": [15.6800, 76.2500],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Hirebenakal_megalithic_site.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Pre-historic_tombs-1.JPG",
         "hints": ["State: Karnataka", "Megalithic necropolis from Iron-Age era."]  
       },
       {
         "name": "Belum Caves",
         "location": "Nandyal district, Andhra Pradesh",
         "latlng": [15.1800, 78.3800],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Belum_Caves_Interior.jpg",
+        "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/1c/95/33/group-outing-belum-caves3.jpg?w=1200&h=-1&s=1",
         "hints": ["State: Andhra Pradesh", "Longest natural underground cave system in India."]  
-      },
-      {
-        "name": "Chettinad Mansions",
-        "location": "Chettinad region, Tamil Nadu",
-        "latlng": [10.7570, 78.6900],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Chettinad_mansion_exterior.jpg",
-        "hints": ["State: Tamil Nadu", "Opulent 19th-20th-century merchant mansions, rich cultural heritage."]  
-      },
-      {
-        "name": "Majuli Island",
-        "location": "Brahmaputra River, Assam",
-        "latlng": [26.9560, 94.2110],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Majuli_Island_Assam_river.jpg",
-        "hints": ["State: Assam", "Largest river-island in the world; tribal & eco-culture."]  
-      },
-      {
-        "name": "Ziro Valley",
-        "location": "Lower Subansiri district, Arunachal Pradesh",
-        "latlng": [27.6370, 93.8320],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ziro_Valley_paddy_fields.jpg",
-        "hints": ["State: Arunachal Pradesh", "Scenic valley with rice-terrace fields & tribal culture."]  
-      },
-      {
-        "name": "Khajjiar Meadow",
-        "location": "Chamba district, Himachal Pradesh",
-        "latlng": [32.4170, 76.0500],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Khajjiar_meadow.jpg",
-        "hints": ["State: Himachal Pradesh", "Alpine meadow often called ‘Mini-Switzerland of India’."]  
-      },
-      {
-        "name": "Dzukou Valley",
-        "location": "Nagaland / Manipur border",
-        "latlng": [25.6763, 94.1258],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Dzukou_Valley_lilies.jpg",
-        "hints": ["Region: North-East India", "Remote valley, famous for wildflowers and trekking."]  
-      },
-      {
-        "name": "Spiti Valley",
-        "location": "Lahaul & Spiti, Himachal Pradesh",
-        "latlng": [32.2226, 77.7335],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Spiti_Valley_landscape.jpg",
-        "hints": ["State: Himachal Pradesh", "High-altitude desert landscape in Himalayas."]  
-      },
-      {
-        "name": "Hemis Monastery",
-        "location": "Hemis, Ladakh Union Territory",
-        "latlng": [32.9450, 77.5850],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hemis_Monastery_Ladakh.jpg",
-        "hints": ["Union Territory: Ladakh", "Important Buddhist monastery in high Himalayas."]  
-      },
-      {
-        "name": "Chadar Trek – Zanskar River Ice Trail",
-        "location": "Zanskar Valley, Ladakh Union Territory",
-        "latlng": [33.0058, 76.2600],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Chadar_Trek_Zanskar_ice_trail.jpg",
-        "hints": ["Union Territory: Ladakh", "Extreme winter trek on frozen river; remote adventure site."]  
-      },
-      {
-        "name": "Golkonda Fort",
-        "location": "Hyderabad, Telangana",
-        "latlng": [17.3833, 78.4011],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Golconda_Fort_14.jpg",
-        "hints": ["State: Telangana", "Historic hill-fort & former diamond trade centre."]  
-      },
-      {
-        "name": "Rann of Kutch – White Salt Desert",
-        "location": "Kutch, Gujarat",
-        "latlng": [23.7333, 70.8080],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Rann_of_Kutch_white_salt_desert.jpg",
-        "hints": ["State: Gujarat", "Seasonal salt desert landscape; one-of‐a-kind terrain."]  
-      },
-      {
-        "name": "Cellular Jail",
-        "location": "Port Blair, Andaman & Nicobar Islands",
-        "latlng": [11.6667, 92.7333],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Cellular_Jail_Andaman.jpg",
-        "hints": ["Union Territory: Andaman & Nicobar Islands", "Colonial prison; important in Indian freedom struggle."]  
-      },
-      {
-        "name": "Meghalaya Living Root Bridges",
-        "location": "Cherrapunjee (Sohra), Meghalaya",
-        "latlng": [25.2837, 91.7133],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Living_root_bridge_meghalaya.jpg",
-        "hints": ["State: Meghalaya", "Organic suspension bridges grown from tree roots."]  
-      },
-      {
-        "name": "Chandraprabha Wildlife Sanctuary",
-        "location": "Chandauli, Uttar Pradesh",
-        "latlng": [25.3466, 83.5010],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Chandraprabha_Wildlife_Sanctuary_Uttar_Pradesh.jpg",
-        "hints": ["State: Uttar Pradesh", "Lesser-known sanctuary with waterfalls & wildlife."]  
-      },
-      {
-        "name": "Nilgiri Mountain Railway",
-        "location": "Tamil Nadu",
-        "latlng": [11.4064, 76.6958],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Nilgiri_Rly_train.jpg",
-        "hints": ["State: Tamil Nadu", "Historic mountain railway; steam-engine route."]
-      },
-      {
-        "name": "Darjeeling Himalayan Railway",
-        "location": "West Bengal",
-        "latlng": [27.0410, 88.2669],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Darjeeling_himalayan_rail_steam_engine.jpg",
-        "hints": ["State: West Bengal", "World-heritage narrow gauge railway in Himalayas."]
       },
       {
         "name": "Victorian Gothic and Art Deco Ensembles of Mumbai",
         "location": "Mumbai, Maharashtra",
         "latlng": [18.9430, 72.8235],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Victoria_Gothic_and_Art_Deco_Mumbai.jpg",
+        "imageUrl": "https://s7ap1.scene7.com/is/image/incredibleindia/the-victorian-&-art-deco-ensemble-of-mumbai-maharashtra-1-attr-hero?qlt=82&ts=1742186252510",
         "hints": ["State: Maharashtra", "20th-century heritage buildings in Mumbai."]
       },
       {
-        "name": "Ramappa Temple (Rudreswara)",
+        "name": "Ramappa Temple(Rudreswara)",
         "location": "Palampet, Telangana",
         "latlng": [18.2322, 79.4845],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Ramappa_Temple_Telangana.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Ramappa_Temple_%28Human_Scale%29.jpg",
         "hints": ["State: Telangana", "13th-century Kakatiya era sandstone temple."]
       },
       {
-        "name": "Sultanate Monuments of Delhi (Qutub Minar etc.)",
-        "location": "Delhi",
-        "latlng": [28.5244, 77.1855],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Qutub_Minar_Tower.jpg",
-        "hints": ["State/UT: Delhi", "Monument complex from Delhi Sultanate era."]
-      },
-      {
-        "name": "Rupeswar Temple, Puri",
+        "name": "Rupeswar Temple",
         "location": "Puri, Odisha",
         "latlng": [19.8138, 85.8312],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Rupeswara_Temple_Puri.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Rupeswar_Temple_%28Kalna%2C_Burdwan%29.jpg",
         "hints": ["State: Odisha", "Lesser-known ancient temple by the coast."]
       },
       {
         "name": "Bhaja Caves",
         "location": "Pune, Maharashtra",
         "latlng": [18.1527, 73.6850],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Bhaja_Caves_rock_cut.jpg",
+        "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/9b/90/3f/the-main-prayer-hall.jpg?w=900&h=500&s=1",
         "hints": ["State: Maharashtra", "2nd century rock-cut Buddhist caves near Pune."]
       },
       {
         "name": "Chilika Lake",
         "location": "Odisha",
         "latlng": [19.7000, 85.3000],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Chilika_Lake_Bird_Sanctuary.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Birds_eyeview_of_Chilika_Lake.jpg",
         "hints": ["State: Odisha", "Large brackish-water lagoon & bird-sanctuary."]
-      },
-      {
-        "name": "Spiti Valley (alternate panorama)",
-        "location": "Himachal Pradesh",
-        "latlng": [32.2226, 77.7335],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Spiti_Valley_Himachal2019.jpg",
-        "hints": ["State: Himachal Pradesh", "Remote high-altitude desert valley in Himalayas."]
       },
       {
         "name": "Nalanda Ancient University Ruins",
         "location": "Nalanda, Bihar",
         "latlng": [25.1350, 85.4430],
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Nalanda_monastery_ruins.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg",
         "hints": ["State: Bihar", "Ancient Buddhist university site; heritage ruins."]
       }
   ]  
