@@ -8,217 +8,74 @@
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--bg-light);
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    overflow: hidden; font-family: 'Roboto', sans-serif; background-color: var(--bg-light);
 }
 
-#map {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: var(--bg-light);
-}
+#map { width: 100%; height: 100%; z-index: 0; background-color: var(--bg-light); }
+.leaflet-container { cursor: crosshair !important; }
+.leaflet-control-zoom { border: 1px solid var(--border-color) !important; background-color: var(--panel-light) !important; }
+.leaflet-control-zoom a { color: var(--text-dark) !important; }
 
-.leaflet-container {
-    cursor: crosshair !important;
-}
-
-.leaflet-control-zoom {
-    border: 1px solid var(--border-color) !important;
-    background-color: var(--panel-light) !important;
-}
-
-.leaflet-control-zoom a {
-    color: var(--text-dark) !important;
-}
-
-/* --- NEW: Header and Footer Layout --- */
+/* --- Header and Footer Layout --- */
 .ui-header, .ui-footer {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    pointer-events: none; /* Allows clicking through the container */
+    position: absolute; left: 20px; right: 20px; z-index: 1000;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 20px; pointer-events: none;
 }
+.ui-header { top: 20px; }
+.ui-footer { bottom: 20px; }
+.ui-panel, button { pointer-events: auto; }
 
-.ui-header {
-    top: 20px;
-}
-
-.ui-footer {
-    bottom: 20px;
-}
-
-.ui-panel, button {
-    pointer-events: auto; /* Re-enables clicking on panels and buttons */
-}
-
-/* UI Panel Styling (Light Theme) */
+/* UI Panel Styling */
 .ui-panel {
-    background: var(--panel-light);
-    color: var(--text-dark);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    background: var(--panel-light); color: var(--text-dark);
+    border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.95);
-}
-
-.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-}
+.hidden { opacity: 0; visibility: hidden; transform: scale(0.95); }
+.visible { opacity: 1; visibility: visible; transform: scale(1); }
 
 /* Panel Content */
-.question-panel {
-    font-family: 'Lora', serif;
-    font-size: 1.5em;
-    flex-grow: 1;
-    text-align: center;
-}
-
-#thumbnail-container {
-    width: 150px;
-    height: 94px;
-    padding: 0;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-#thumbnail-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#timer-container {
-    font-family: 'Lora', serif;
-    font-size: 2em;
-    color: var(--accent);
-    flex-shrink: 0;
-}
-
+.question-panel { font-family: 'Lora', serif; font-size: 1.5em; flex-grow: 1; text-align: center; }
+#thumbnail-container { width: 150px; height: 94px; padding: 0; overflow: hidden; flex-shrink: 0; }
+#thumbnail-image { width: 100%; height: 100%; object-fit: cover; }
+#timer-container { font-family: 'Lora', serif; font-size: 2em; color: var(--accent); flex-shrink: 0; }
 #hint-button {
-    background: none;
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    font-size: 1em;
-    font-weight: 700;
-    border-radius: 50px;
-    padding: 8px 20px;
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
+    background: none; border: 2px solid var(--accent); color: var(--accent); font-size: 1em; font-weight: 700;
+    border-radius: 50px; padding: 8px 20px; cursor: pointer; transition: background-color 0.2s, color 0.2s;
 }
-
-#hint-button:hover {
-    background-color: var(--accent);
-    color: var(--panel-light);
-}
-
-#hint-button:disabled {
-    background: var(--text-muted);
-    border-color: var(--text-muted);
-    color: var(--panel-light);
-    cursor: not-allowed;
-}
-
-.feedback-panel {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.feedback-item {
-    text-align: center;
-    font-weight: 700;
-}
-
-#distance-feedback {
-    font-family: 'Lora', serif;
-    font-size: 2em;
-    color: var(--accent);
-}
-
-#direction-feedback {
-    font-size: 1.5em;
-}
-
-#attempts-feedback {
-    font-size: 1.2em;
-    color: var(--text-muted);
-}
+#hint-button:hover { background-color: var(--accent); color: var(--panel-light); }
+#hint-button:disabled { background: var(--text-muted); border-color: var(--text-muted); color: var(--panel-light); cursor: not-allowed; }
+.feedback-panel { display: flex; align-items: center; gap: 20px; }
+.feedback-item { text-align: center; font-weight: 700; }
+#distance-feedback { font-family: 'Lora', serif; font-size: 2em; color: var(--accent); }
+#direction-feedback { font-size: 1.5em; }
+#attempts-feedback { font-size: 1.2em; color: var(--text-muted); }
 
 /* Overlays */
 #welcome-overlay, #image-modal, #game-over-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(248, 249, 250, 0.8);
-    backdrop-filter: blur(8px);
-    z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(248, 249, 250, 0.8); backdrop-filter: blur(8px);
+    z-index: 2000; display: flex; justify-content: center; align-items: center;
 }
-
-.welcome-box {
-    text-align: center;
-    color: var(--text-dark);
-}
-
-.welcome-box h1, #game-over-overlay h2 {
-    font-family: 'Lora', serif;
-    font-size: 4em;
-    margin: 0;
-}
+.welcome-box { text-align: center; color: var(--text-dark); }
+.welcome-box h1, #game-over-overlay h2 { font-family: 'Lora', serif; font-size: 4em; margin: 0; }
 #game-over-overlay h2 { font-size: 3em; }
-
-.welcome-box p {
-    font-size: 1.5em;
-    margin: 0 0 30px;
-    color: var(--text-muted);
-}
-#game-over-answer {
-    font-size: 1.2em;
-    margin: 10px 0 20px;
-    color: var(--text-muted);
-}
+.welcome-box p { font-size: 1.5em; margin: 0 0 30px; color: var(--text-muted); }
+#game-over-answer { font-size: 1.2em; margin: 10px 0 20px; color: var(--text-muted); }
 #start-button, #start-guessing-button, #play-again-button {
-    background: var(--accent);
-    color: var(--panel-light);
-    border: none;
-    padding: 15px 40px;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
+    background: var(--accent); color: var(--panel-light); border: none; padding: 15px 40px;
+    font-size: 1.2em; font-weight: 700; border-radius: 50px; cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 #play-again-button { margin-top: 30px; }
-#start-button:hover, #start-guessing-button:hover, #play-again-button:hover {
-    transform: scale(1.05);
-}
+#start-button:hover, #start-guessing-button:hover, #play-again-button:hover { transform: scale(1.05); }
 
-/* --- BUG FIX IS HERE: Added missing styles for the image modal --- */
+/* --- BUG FIX IS HERE: Re-added missing styles for the image modal --- */
 .image-container {
     text-align: center;
 }
-
 #location-image {
     max-width: 80vw;
     max-height: 70vh;
@@ -233,25 +90,20 @@ body, html {
 .compass-ring { width: 60px; height: 60px; border: 2px solid rgba(33, 37, 41, 0.7); border-radius: 50%; position: relative; box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); }
 .compass-pointer { position: absolute; width: 2px; height: 22px; background: var(--accent); top: 8px; left: 50%; transform-origin: bottom center; transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); }
 .guess-marker-div { width: 16px; height: 16px; background: #212529; opacity: 0.7; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+.reveal-score p { font-size: 2.5em; font-weight: 700; color: var(--accent); }
 
 /* --- MOBILE OPTIMIZATION --- */
 @media (max-width: 768px) {
-    .ui-header, .ui-footer {
-        left: 10px; right: 10px;
-        gap: 10px;
-    }
+    .ui-header, .ui-footer { left: 10px; right: 10px; }
     .ui-header { top: 10px; }
-    .ui-footer { bottom: 10px; flex-wrap: wrap; justify-content: center; }
-
-    #thumbnail-container { display: none; }
-    .question-panel { font-size: 1.1em; padding: 8px 15px; }
-    #timer-container { position: absolute; top: 0; right: 0; font-size: 1.8em; }
-
-    .feedback-panel { order: 1; width: 100%; justify-content: space-around; }
-    #hint-container { order: 2; }
+    .ui-footer { bottom: 10px; }
+    .question-panel { display: none; } 
+    #thumbnail-container { width: 120px; height: 75px; }
+    #timer-container { font-size: 1.8em; }
+    .ui-footer { justify-content: space-between; }
+    .feedback-panel { gap: 15px; }
     #distance-feedback { font-size: 1.5em; }
-    #direction-feedback { font-size: 1.2em; }
+    #direction-feedback { display: none; }
     #attempts-feedback { font-size: 1em; }
-
     .welcome-box h1, #game-over-overlay h2 { font-size: 2.5em; }
 }

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Mysore Palace", location: "Mysuru, Karnataka", latlng: [12.3052, 76.6552], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_at_night.jpg", hints: ["State: Karnataka", "The former seat of the Wadiyar dynasty."] },
     ];
 
-    // --- Using OpenStreetMap for a classic, live map feel ---
     const map = L.map('map', { scrollWheelZoom: true, doubleClickZoom: true, minZoom: 5, maxZoom: 18, zoomControl: false }).setView([23.5, 78.9629], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -136,9 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    function stopTimer() {
-        clearInterval(timerInterval);
-    }
+    function stopTimer() { clearInterval(timerInterval); }
 
     function showHint() {
         if (hintsUsed >= correctPlace.hints.length) return;
