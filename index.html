@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geo Guesser: India</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,viewport-fit=cover"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Geo Guesser: India</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 </head>
 <body>
+  <div id="map" aria-label="Map"></div>
 
-    <div id="map"></div>
-
-    <!-- NEW: Robust Header Container -->
-    <div class="ui-header" id="top-ui">
-        <div id="thumbnail-container" class="ui-panel hidden">
-            <img id="thumbnail-image" src="" alt="Location Thumbnail">
-        </div>
-        <div class="ui-panel question-panel">
-            <p id="place-name">Identify the Location</p>
-        </div>
-        <div id="timer-container" class="ui-panel hidden">
-            <span id="timer-score">1000</span>
-        </div>
+  <!-- Header -->
+  <div class="ui-header" id="top-ui">
+    <div id="thumbnail-container" class="ui-panel hidden" aria-hidden="true">
+      <img
+        id="thumbnail-image"
+        src=""
+        alt="Location thumbnail"
+        decoding="async"
+        loading="eager"
+        referrerpolicy="no-referrer"
+      />
     </div>
-
-    <!-- NEW: Robust Footer Container -->
-    <div class="ui-footer" id="bottom-ui">
-        <div id="hint-container" class="ui-panel hidden">
-            <button id="hint-button">💡 Hint</button>
-        </div>
-        <div id="feedback-panel" class="ui-panel feedback-panel hidden">
-            <div class="feedback-item" id="distance-feedback">-- km</div>
-            <div class="feedback-item" id="direction-feedback">--</div>
-            <div class="feedback-item" id="attempts-feedback">Attempt 1/5</div>
-        </div>
+    <div class="ui-panel question-panel">
+      <p id="place-name">Identify the Location</p>
     </div>
-
-    <!-- Overlays -->
-    <div id="welcome-overlay" class="visible">
-        <div class="welcome-box">
-            <h1>Geo Guesser</h1>
-            <p>India Edition</p>
-            <button id="start-button">Start Game</button>
-        </div>
+    <div id="timer-container" class="ui-panel hidden" aria-live="polite">
+      <span id="timer-score">1000</span>
     </div>
+  </div>
 
-    <div id="image-modal" class="hidden">
-        <div class="image-container">
-            <img id="location-image" src="" alt="Location to guess">
-            <button id="start-guessing-button">Start Guessing</button>
-        </div>
+  <!-- Footer -->
+  <div class="ui-footer" id="bottom-ui">
+    <div id="hint-container" class="ui-panel hidden">
+      <button id="hint-button" type="button">💡 Hint</button>
     </div>
-    
-    <div id="hint-toast" class="hidden"></div>
-
-    <div id="game-over-overlay" class="hidden">
-        <div class="welcome-box">
-            <h2 id="game-over-title">Round Over</h2>
-            <p id="game-over-answer"></p>
-            <div class="reveal-score">
-                <h4>Final Score</h4>
-                <p id="game-over-score">0</p>
-            </div>
-            <button id="play-again-button">Play Again</button>
-        </div>
+    <div id="feedback-panel" class="ui-panel feedback-panel hidden" aria-live="polite">
+      <div class="feedback-item" id="distance-feedback">-- km</div>
+      <div class="feedback-item" id="direction-feedback">--</div>
+      <div class="feedback-item" id="attempts-feedback">Attempt 1/5</div>
     </div>
+  </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="script.js"></script>
+  <!-- Overlays -->
+  <div id="welcome-overlay" class="visible" role="dialog" aria-modal="true">
+    <div class="welcome-box">
+      <h1>Geo Guesser</h1>
+      <p>India Edition</p>
+      <button id="start-button" type="button">Start Game</button>
+    </div>
+  </div>
 
+  <div id="image-modal" class="hidden" role="dialog" aria-modal="true">
+    <div class="image-container">
+      <img
+        id="location-image"
+        src=""
+        alt="Location to guess"
+        decoding="async"
+        loading="eager"
+        referrerpolicy="no-referrer"
+      />
+      <button id="start-guessing-button" type="button">Start Guessing</button>
+    </div>
+  </div>
+
+  <div id="hint-toast" class="hidden" role="status" aria-live="polite"></div>
+
+  <div id="game-over-overlay" class="hidden" role="dialog" aria-modal="true">
+    <div class="welcome-box">
+      <h2 id="game-over-title">Round Over</h2>
+      <p id="game-over-answer"></p>
+      <div class="reveal-score">
+        <h4>Final Score</h4>
+        <p id="game-over-score">0</p>
+      </div>
+      <button id="play-again-button" type="button">Play Again</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
